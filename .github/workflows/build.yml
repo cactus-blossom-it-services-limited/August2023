@@ -6,12 +6,12 @@ jobs:
     container: node:14
     steps:
       - run: node --version
-      name: Check Node Version
+        name: Check Node Version
       - run: npm --version
-      name: Check NPM Version
+        name: Check NPM Version
       - uses: actions/checkout@v3
-      name: Checkout Code
+        name: Checkout Code
       - run: npm install
-      name: Install NPM Packages
+        name: Install NPM Packages
       - run: node app.js
-      name: Run Application
+        name: Run Application
